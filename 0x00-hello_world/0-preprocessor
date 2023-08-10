@@ -1,7 +1,2 @@
 #!/bin/bash
-
-if [ -z "$CFILE" ]; then
-    exit 1
-fi
-
-gcc -E "$CFILE" -o c
+export CFILE=0-main.c ; gcc -E -P -C $CFILE > c
