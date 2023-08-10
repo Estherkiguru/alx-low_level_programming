@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    printf("Hello, C\n");
+    printf("Hello, Holberton\n");
     return (0);
 }
