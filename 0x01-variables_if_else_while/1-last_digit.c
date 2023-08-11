@@ -6,7 +6,7 @@
  * main - Entry point
  *
  * Description: Prints the last digit of a randomly generated
- * 		 number and its properties.
+ *		number and its properties.
  *
  * Return: Always 0 (Success)
  */
