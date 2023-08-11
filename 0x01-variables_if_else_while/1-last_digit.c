@@ -5,7 +5,8 @@
 /**
  * main - Entry point
  *
- * Description: Prints the last digit of a randomly generated number and its properties.
+ * Description: Prints the last digit of a randomly generated
+ * 		 number and its properties.
  *
  * Return: Always 0 (Success)
  */
