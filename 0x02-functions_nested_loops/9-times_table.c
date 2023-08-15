@@ -11,6 +11,7 @@ void times_table(void)
 	{
 		_putchar('0'); /* Print the first column */
 		_putchar(',');
+		_putchar(' ');
 		for (column = 1; column <= 9; column++)
 		{
 			product = row * column;
