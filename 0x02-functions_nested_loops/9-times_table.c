@@ -14,7 +14,6 @@ void times_table(void)
 		for (column = 1; column <= 9; column++)
 		{
 			product = row * column;
-			_putchar(' ');
 			if (product <= 9)
 			{
 				_putchar(' ');
