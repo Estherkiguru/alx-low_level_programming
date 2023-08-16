@@ -1,26 +1,27 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
 int main(void)
 {
-unsigned long int fib1 = 1, fib2 = 2, next;
+    unsigned long int a = 1, b = 2, next;
+    int i;
 
-printf("%lu, %lu", fib1, fib2);
+    printf("%lu, %lu, ", a, b);
 
-for (int i = 2; i < 98; i++)
-{
-next = fib1 + fib2;
-printf(", %lu", next);
-fib1 = fib2;
-fib2 = next;
-}
+    i = 3;
+    while (i <= 98)
+    {
+        next = a + b;
+        printf("%lu", next);
 
-printf("\n");
+        if (i != 98)
+            printf(", ");
 
-return (0);
+        a = b;
+        b = next;
+        i++;
+    }
+
+    printf("\n");
+    return 0;
 }
 
