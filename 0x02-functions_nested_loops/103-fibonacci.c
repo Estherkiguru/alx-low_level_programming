@@ -13,7 +13,6 @@ while (fib1 <= 4000000)
 {
 if (fib1 % 2 == 0)
 sum += fib1;
-        
 next = fib1 + fib2;
 fib1 = fib2;
 fib2 = next;
@@ -21,6 +20,6 @@ fib2 = next;
 
 printf("%lu\n", sum);
 
-return 0;
+return (0);
 }
 
