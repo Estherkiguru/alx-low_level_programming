@@ -3,25 +3,24 @@
 /**
  * main - Entry point
  *
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    unsigned long int fib1 = 1, fib2 = 2, next;
-    int i;
+unsigned long int fib1 = 1, fib2 = 2, sum = 0, next;
 
-    printf("%lu, %lu", fib1, fib2);
+while (fib1 <= 4000000)
+{
+if (fib1 % 2 == 0)
+sum += fib1;
+        
+next = fib1 + fib2;
+fib1 = fib2;
+fib2 = next;
+}
 
-    for (i = 2; i < 50; i++)
-    {
-        next = fib1 + fib2;
-        printf(", %lu", next);
-        fib1 = fib2;
-        fib2 = next;
-    }
+printf("%lu\n", sum);
 
-    printf("\n");
-
-    return 0;
+return 0;
 }
 
