@@ -13,7 +13,7 @@ while (str[length] != '\0')
 length++;
 }
 
-start = length / 2;   
+start = length / 2;
 if (length % 2 != 0) /* If the length is odd, adjust start index */
 {
 start++;
