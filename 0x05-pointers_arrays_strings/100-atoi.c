@@ -13,27 +13,26 @@ int _atoi(char *s)
     int result = 0;
     int i = 0;
 
-    while (s[i] != '\0')
+    while (s[i] == ' ' || (s[i] >= 9 && s[i] <= 13))
+        i++;
+
+    while (s[i] == '-' || s[i] == '+')
     {
         if (s[i] == '-')
-        {
             sign *= -1;
-        }
-        else if (s[i] >= '0' && s[i] <= '9')
-        {
-            int digit = s[i] - '0';
+        i++;
+    }
 
-            if (result > INT_MAX / 10 || (result == INT_MAX / 10 && digit > INT_MAX % 10))
-            {
-                return (sign == 1) ? INT_MAX : INT_MIN;
-            }
+    while (s[i] >= '0' && s[i] <= '9')
+    {
+        int digit = s[i] - '0';
 
-            result = result * 10 + digit;
-        }
-        else if (result > 0)
+        if (result > INT_MAX / 10 || (result == INT_MAX / 10 && digit > INT_MAX % 10))
         {
-            break;
+            return (sign == 1) ? INT_MAX : INT_MIN;
         }
+
+        result = result * 10 + digit;
         i++;
     }
 
