@@ -4,7 +4,7 @@ int check_prime(int n, int divisor);
 /**
  * is_prime_number - Checks if a number is prime.
  * @n: The number to be checked.
- *
+ *check_prime - Recursive function to check for prime.
  * Return: 1 if prime, 0 otherwise.
  */
 int is_prime_number(int n)
