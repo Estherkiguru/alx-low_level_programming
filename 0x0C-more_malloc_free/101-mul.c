@@ -26,6 +26,10 @@ int is_positive_number(char *str)
  *
  * Return: 0 if successful, 98 for invalid input, and 1 for other errors.
  */
+int multiply(int num1, int num2)
+{
+	return (num1 * num2);
+}
 int main(int argc, char *argv[])
 {
 	int num1, num2, result;
