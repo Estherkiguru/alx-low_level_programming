@@ -10,7 +10,6 @@
  * Return: The index of the first element
  * for which cmp returns non-zero.
  *If no element matches or if size
- is less than or equal to 0, return -1.
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
