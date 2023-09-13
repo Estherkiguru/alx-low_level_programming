@@ -1,5 +1,7 @@
 #include "3-calc.h"
 #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int (*get_op_func(char *s))(int, int)
 {
@@ -23,7 +25,7 @@ int (*get_op_func(char *s))(int, int)
         i++;
     }
 
-    printf("Error: Operator not found\n");
+    printf("Error\n");
     exit(99);
 }
 
