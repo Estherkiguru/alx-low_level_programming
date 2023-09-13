@@ -8,8 +8,8 @@
  */
 typedef struct op
 {
-    char *op;
-    int (*f)(int a, int b);
+char *op;
+int (*f)(int a, int b);
 } op_t;
 
 void print_name(char *name, void (*f)(char *));
