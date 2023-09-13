@@ -1,5 +1,6 @@
 #ifndef FUNCTION_PONTERS_H
 #define  FUNCTION_PONTERS_H
+#include <stddef.h>
 
 /**
  * struct op - Struct op
@@ -14,7 +15,7 @@ int (*f)(int a, int b);
 
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
-
+int int_index(int *array, int size, int (*cmp)(int));
 
 
 #endif /* FUNCTION_PONTERS.H */
