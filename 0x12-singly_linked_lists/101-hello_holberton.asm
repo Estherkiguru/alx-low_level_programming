@@ -1,5 +1,6 @@
 section .data
-    format db "Hello, Holberton",10,0
+    hello db "Hello, Holberton",10,0
+    len equ $ - hello
 
 section .text
     extern printf
@@ -7,7 +8,8 @@ section .text
 
 main:
     push rbp
-    mov rdi, format
+    mov rdi, hello
+    mov rax, 0
     call printf
     pop rbp
     ret
