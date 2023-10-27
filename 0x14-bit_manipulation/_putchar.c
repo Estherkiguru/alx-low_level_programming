@@ -1,12 +1,13 @@
-#include "main.h"
-/**
- * print_binary - Prints the binary representation of a number.
- * @n: The number to be printed in binary.
- */
-void print_binary(unsigned long int n)
-{
-	if (n > 1)
-		print_binary(n >> 1)
+#include <unistd.h>
 
-	putchar((n & 1) + '0');
+/**
+ * _putchar - Writes a character to the standard output (stdout).
+ * @c: The character to be written.
+ *
+ * Return: On success, the character is returned. On error, -1 is returned.
+ */
+int _putchar(char c)
+{
+	return write(1, &c, 1);
 }
+
